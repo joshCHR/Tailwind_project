@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.list li a:hover{
+    @apply text-gray-500 duration-300 
+  }
+  section {
+    @apply h-[900px]
+  }
+
+ body::-webkit-scrollbar{
+    @apply w-3
+  }
+  body::-webkit-scrollbar-thumb{
+    @apply bg-red-400 rounded-full
+  }
+  body::-webkit-scrollbar-track{
+    @apply bg-blue-600
+  }
+  /* #Home div:nth-child(4)::before{
+    content: '250$';
+    @apply absolute w-20 h-8 bg-black/50 top-2 right-2 rounded-xl flex justify-center items-center text-white font-semibold
+  } */
+  #Home .childen{
+    counter-increment: compter;
+  }
+  #Home .childen::before{
+    content: counter(compter) "." attr(data-price);;
+    /* content: attr(data-price); */
+    @apply absolute w-20 h-8 bg-black/50 top-2 right-2 rounded-xl flex justify-center items-center text-white font-semibold
+  }
