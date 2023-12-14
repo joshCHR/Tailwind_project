@@ -87,13 +87,13 @@
  <section id="About" class="bg-red-50" ></section>
  <!-- Service -->
  <section id="Service" class="bg-red-300 flex justify-center items-center">
-    <div class="w-[500px] h-[400px] bg-white/80 overflow-hidden rounded-md">
+    <div class="w-[500px] h-[600px] bg-white/80 overflow-hidden rounded-md">
         <div class="h-[20%] shadow-sm flex justify-center items-center">
                 <h2 class="text-3xl text-blue-500">Login</h2>
         </div>
         <div class="h-[80%]">
             <form action="" class="w-full h-full flex justify-center  py-6">
-                <div class="space-y-5">
+                <div class="space-y-5 relative">
                     <div class="space-x-5">
                     <label for="prenom" class="text-[20px] text-blue-300">Prenom</label>
                     <input id="prenom" placeholder="Votre Prenom" type="number" class=" placeholder:text-blue-300 text-gray-500 px-5 py-2 outline-none border border-blue-500 rounded-md bg-transparent">
@@ -119,9 +119,25 @@
                 </div>
                 <div class="h-10">
                     <input type="file" name="" class="h-full w-full rounded-full bg-gray-300 border outline-none file:" id="">
+                    
                  </div>
+                 <div class="h-10">
+                    <input type="file" name="" class="bg-slate-400 w-full overflow-hidden rounded-full text-white file:border-none file:bg-red-500 h-10 file:h-10 mr-3 file:text-right file:px-3 file:rounded-full" id="">
+
+               </div>
+               <div class="px-2 flex items-center gap-2" >
+                <input type="checkbox" class="h-10 accent-slate-700" name="" id="Cocher">
+                <label for="Cocher" class="text-blue-900" >Cocher ici</label>
+              
                 </div>
-               
+            <div class="flex justify-center mt-20 absolute bottom-5 w-full">
+            <button class="bg-blue-500 text-blue-50 px-4 py-2 rounded-full hover:bg-blue-500/30 duration-300 flex items-center gap-2"><span>Sauvegarder</span>
+                <i class="fa-solid fa-code"></i>
+                
+            </button>
+             
+        </div>
+              
         </div>
         
         </form>
