@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Tailwincss</title>
     <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
 </head>
 <body class="bg-gray-500">
  <div class="scrollbar">
@@ -95,12 +96,30 @@
                 <div class="space-y-5">
                     <div class="space-x-5">
                     <label for="prenom" class="text-[20px] text-blue-300">Prenom</label>
-                    <input id="prenom" placeholder="Votre Prenom" type="text" class=" placeholder:text-blue-300 text-gray-500 px-5 py-2 outline-none border border-blue-500 rounded-md bg-transparent">
+                    <input id="prenom" placeholder="Votre Prenom" type="number" class=" placeholder:text-blue-300 text-gray-500 px-5 py-2 outline-none border border-blue-500 rounded-md bg-transparent">
                 </div>
-                <div class="space-x-5">
-                    
-                    <input id="prenom" placeholder="Votre Prenom" type="text" class=" placeholder:text-blue-300 text-gray-500 px-5 py-2 outline-none border border-blue-500 rounded-md bg-transparent">
+                <div class="border h-10 rounded-full overflow-hidden  flex">
+                    <div class="h-full w-[10%] flex justify-center items-center">
+                        <i class="fa-solid fa-magnifying-glass-minus text-blue-600"></i>
+                    </div> 
+                    <div class="h-full w-[45%] ">
+                    <input type="text" class="h-full w-full placeholder:text-blue-400 px-4 bg-transparent outline-none" placeholder="search" >
+
+                    </div>
+                    <div class="h-full w-[45%] flex items-center text-sm space-x-2">
+                        <span>Powered by</span>
+                        <a href=""class="hover:text-blue-400 duration-500">
+                            <i class="fa-brands fa-algolia"></i>
+                            <span>fa-algolia</span>
+                        </a>
+                    </div>
+                  
+                    <!-- <i class="fa-solid fa-magnifying-glass-minus"></i>
+                    <input id="prenom" placeholder="Votre Prenom" type="text" class=" placeholder:text-blue-300 text-gray-500 px-5 py-2 outline-none rounded-md bg-transparent"> -->
                 </div>
+                <div class="h-10">
+                    <input type="file" name="" class="h-full w-full rounded-full bg-gray-300 border outline-none file:" id="">
+                 </div>
                 </div>
                
         </div>
