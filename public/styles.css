@@ -540,6 +540,10 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.fixed {
+  position: fixed;
+}
+
 .absolute {
   position: absolute;
 }
@@ -1083,6 +1087,10 @@ body::-webkit-scrollbar-track {
 }
 
 @media (min-width: 375px) {
+  .mobile\:fixed {
+    position: fixed;
+  }
+
   .mobile\:absolute {
     position: absolute;
   }
@@ -1101,6 +1109,18 @@ body::-webkit-scrollbar-track {
 
   .mobile\:top-0 {
     top: 0px;
+  }
+
+  .mobile\:z-50 {
+    z-index: 50;
+  }
+
+  .mobile\:z-0 {
+    z-index: 0;
+  }
+
+  .mobile\:z-10 {
+    z-index: 10;
   }
 
   .mobile\:ml-3 {
@@ -1157,6 +1177,10 @@ body::-webkit-scrollbar-track {
 
   .mobile\:w-\[300\] {
     width: 300;
+  }
+
+  .mobile\:w-screen {
+    width: 100vw;
   }
 
   .mobile\:-translate-x-\[100\%\] {
@@ -1233,6 +1257,18 @@ body::-webkit-scrollbar-track {
 
   .mobile\:uppercase {
     text-transform: uppercase;
+  }
+
+  .mobile\:opacity-10 {
+    opacity: 0.1;
+  }
+
+  .mobile\:opacity-40 {
+    opacity: 0.4;
+  }
+
+  .mobile\:opacity-30 {
+    opacity: 0.3;
   }
 
   .mobile\:backdrop-blur-lg {
