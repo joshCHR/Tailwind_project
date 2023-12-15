@@ -10,12 +10,15 @@
     <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
 </head>
 <body class="bg-gray-500">
- <div class="scrollbar">
-<!-- Nav bar -->
-<div class=" lg:hidden mobile:block">
+ <div class="scrollbar mobile:h-auto mobile:relative">
+
+<div class=" lg:hidden mobile:block mobile: ">
     <i class="fa-solid fa-bars text-white text-[25px] p-2 m-2 rounded-md bg-black/50"></i>
+    
 </div>
-<div class="bg-slate-400 lg:bg-black md:bg-black mobile:-translate-x-[100%] lg:translate-x-0 mobile:bg-black mobile:w-[80%] mobile:h-screen mobile:block  sm:bg-white lg:h-20 lg:flex lg:fixed lg:w-screen opacity-50 z-10  ">
+<!-- Nav bar -->
+<div class="bg-slate-400 lg:bg-black md:bg-black mobile:backdrop-blur-lg mobile:-translate-x-[100%] mobile:bg-black mobile:w-[80%] mobile:h-screen mobile:block 
+ sm:bg-white lg:h-20 lg:flex lg:fixed lg:w-screen opacity-50 z-10 mobile:absolute mobile:top-0 ">
 
     <div class="lg:h-full mobile:relative mobile:h-[7%] mobile:flex mobile:items-center mobile:w-full  w-1/2 lg:px-7 mobile:px-3 lg:flex lg:gap-2 lg:items-center">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-10 h-10 fill-white">
@@ -50,16 +53,16 @@
 
 </div >
  <!-- Homme -->
- <section id="Home" class="bg-slate-300 pt-32 grid grid-cols-3 gap-2 mobile:hidden ">
+ <section id="Home" class="lg:bg-slate-300 mobile:px-16 lg:h-[900px] mobile:h-auto  lg:pt-32 lg:grid lg:grid-cols-3 lg:gap-2 mobile:grid-cols-1 mobile:pt-6 mobile:space-y-5 ">
     <div data-price="234$"
-     class="bg-white childen  shadow-lg shadow-slate-700 hover:shadow-md hover:shadow-red-300 duration-300 focus:shadow-inner w-[400px] h-[300px] rounded-md relative overflow-hidden ">
+     class="bg-white childen  shadow-lg shadow-slate-700 hover:shadow-md hover:shadow-red-300 duration-300 focus:shadow-inner lg:w-[400px] lg:h-[300px] mobile:w-[300] mobile:h-[200px] rounded-md relative overflow-hidden ">
         
     <img src="." class="h-full bg-center object-cover" alt="">
         <div class=" hover:h-60 bg-black/10 absolute bottom-0 backdrop-blur-lg w-full flex justify-center items-center">
             <h3 class="font-semibold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-red-600">iPhone Xr</h3>
         </div>
     </div>
-    <div data-price="24$"class="bg-white childen w-[400px] h-[300px] rounded-md relative overflow-hidden ">
+    <div data-price="24$"class="bg-white childen lg:w-[400px] lg:h-[300px] mobile:w-[300] mobile:h-[200px] rounded-md relative overflow-hidden ">
         <!-- <div class="w-20 h-10 rounded-full bg-black/50 absolute right-0 top-1 flex justify-center items-center">
             <span class="text-white font-semibold ">320$</span>
         </div> -->
@@ -68,7 +71,7 @@
                 <h3 class="font-semibold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-red-600">iPhone Xr</h3>
             </div>
         </div>
-        <div data-price="100$"class="bg-white childen w-[400px] h-[300px] rounded-md relative overflow-hidden ">
+        <div data-price="100$"class="bg-white childen lg:w-[400px] lg:h-[300px] mobile:w-[300] mobile:h-[200px] rounded-md relative overflow-hidden ">
         
             <img src="./design.jpg" class="h-full bg-center object-cover" alt="">
                 <div class="h-24 bg-black/10 absolute bottom-0 backdrop-blur-lg w-full flex justify-center items-center">
@@ -82,7 +85,7 @@
                         </div>
                     </div>
             </div>
-            <div data-price="21$" class="bg-white childen w-[400px] h-[300px] rounded-md relative overflow-hidden ">
+            <div data-price="21$" class="bg-white childen lg:w-[400px] lg:h-[300px] mobile:w-[300] mobile:h-[200px] rounded-md relative overflow-hidden ">
         
                 <img src="./design.jpg" class="h-full bg-center object-cover" alt="">
                     <div class="h-24 bg-black/10 absolute bottom-0 backdrop-blur-lg w-full flex justify-center items-center">
