@@ -12,17 +12,17 @@
 <body class="bg-gray-500">
  <div class="scrollbar mobile:h-auto mobile:relative">
 
-<div class=" lg:hidden mobile:block mobile:fixed mobile:top-0 mobile:w-screen
- mobile:bg-black mobile:z-50 mobile:opacity-40 ">
+<div class=" lg:hidden mobile:block mobile:fixed mobile:top-0 mobile:w-screen  backdrop-blur-lg
+ mobile:bg-black mobile:z-50 mobile:bg-opacity-40 ">
     <i class="fa-solid fa-bars text-white text-[25px] p-2 m-2 rounded-md bg-black/50"></i>
     
 </div>
 <!-- Nav bar -->
-<div class="bg-slate-400 lg:bg-black md:bg-black mobile:backdrop-blur-lg mobile:fixed mobile:-translate-x-[100%] 
-mobile:translate-x-0 lg:translate-x-0 mobile:bg-black mobile:w-[80%] mobile:h-screen mobile:block 
- sm:bg-white lg:h-20 lg:flex lg:fixed lg:w-screen opacity-50 z-10 mobile:top-0 ">
+<div class="bg-slate-400 lg:bg-black md:bg-black bg-black/30 mobile:fixed mobile:-translate-x-[100%] mobile:translate-x-0 
+ lg:translate-x-0 mobile:w-[80%] mobile:h-screen mobile:block 
+ sm:bg-white lg:h-20 lg:flex lg:fixed lg:w-screen bg-opacity-30 z-50 mobile:backdrop-blur-sm mobile:top-0 ">
 
-    <div class="lg:h-full mobile:relative mobile:h-[7%] mobile:flex mobile:items-center mobile:w-full  w-1/2
+    <div class="lg:h-full mobile:relative  mobile:h-[7%] mobile:flex mobile:items-center mobile:w-full  w-1/2
      mobile:px-3 lg:flex lg:gap-2 lg:items-center">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-10 h-10 fill-white">
             <path d="M11.7 2.805a.75.75 0 01.6 0A60.65 60.65 0 0122.83 8.72a.75.75 0 01-.231 1.337 49.949 49.949 0 00-9.902 3.912l-.003.002-.34.18a.75.75 0 01-.707 0A50.009 50.009 0 007.5 12.174v-.224c0-.131.067-.248.172-.311a54.614 54.614 0 014.653-2.52.75.75 0 00-.65-1.352 56.129 56.129 0 00-4.78 2.589 1.858 1.858 0 00-.859 1.228 49.803 49.803 0 00-4.634-1.527.75.75 0 01-.231-1.337A60.653 60.653 0 0111.7 2.805z" />
@@ -39,13 +39,13 @@ mobile:translate-x-0 lg:translate-x-0 mobile:bg-black mobile:w-[80%] mobile:h-sc
     <div class=" lg:h-full lg:w-1/2  lg:px-7 mobile:h-[93%] ">
         <ul class="lg:flex lg:gap-2 lg:h-full lg:justify-end lg:items-center mobile:uppercase 
          mobile:px-28 mobile:py-20 lg:px-0 lg:py-0 lg:list">
-            <li class="font-semibold mobile:mb-5 text-white">
+            <li class="font-semibold mobile:mb-5  lg:mb-0 text-white">
                 <a href="#Home">Home</a>
             </li>
-            <li class="font-semibold mobile:mb-5 text-white">
+            <li class="font-semibold mobile:mb-5 lg:mb-0 text-white">
                 <a href="#About">About</a>
             </li>
-            <li class="font-semibold mobile:mb-5 text-white">
+            <li class="font-semibold mobile:mb-5 lg:mb-0 text-white">
                 <a href="#Service">Service</a>
             </li>
             <li class="font-semibold  text-white">
@@ -57,7 +57,8 @@ mobile:translate-x-0 lg:translate-x-0 mobile:bg-black mobile:w-[80%] mobile:h-sc
 
 </div >
  <!-- Homme -->
- <section id="Home" class="lg:bg-slate-300 mobile:z-0 mobile:px-16 lg:h-[900px] mobile:h-auto  lg:pt-32 lg:grid lg:grid-cols-3 lg:gap-2 mobile:grid-cols-1 mobile:pt-6 mobile:space-y-5 lg:space-y-0">
+ <section id="Home" class="lg:bg-slate-300 mobile:z-0 mobile:px-16 lg:h-[900px] mobile:h-auto mobile:pb-10 
+  lg:pt-32 lg:grid lg:grid-cols-3 lg:gap-2 mobile:grid-cols-1 mobile:pt-28 mobile:space-y-5 lg:space-y-0">
     <div data-price="234$"
      class="bg-white childen  shadow-lg shadow-slate-700 hover:shadow-md hover:shadow-red-300 duration-300 focus:shadow-inner lg:w-[400px] lg:h-[300px] mobile:w-[300] mobile:h-[200px] rounded-md relative overflow-hidden ">
         
@@ -101,9 +102,9 @@ mobile:translate-x-0 lg:translate-x-0 mobile:bg-black mobile:w-[80%] mobile:h-sc
  <!-- About -->
  <section id="About" class="bg-red-50" ></section>
  <!-- Service -->
- <section id="Service" class="bg-red-300 flex justify-center items-center">
-    <div class="w-[500px] h-[600px] bg-white/80 overflow-hidden rounded-md">
-        <div class="h-[20%] shadow-sm flex justify-center items-center">
+ <section id="Service" class="lg:bg-red-300 mobile:h-auto mobile:py-6 flex justify-center items-center">
+    <div class="w-[500px] h-[600px] lg:bg-white/80 overflow-hidden rounded-md">
+        <div class="h-[20%] lg:shadow-sm flex justify-center items-center">
                 <h2 class="text-3xl text-blue-500">Login</h2>
         </div>
         <div class="h-[80%]">
